@@ -26,4 +26,24 @@ Log.i("Answer","The Answer is $answer")
         toast.show()
         }
     }
+    override fun onStop(){
+        super.onStop()
+        Log.i("Test","Stopped")
+    }
+    override fun onPause(){
+        super.onPause()
+        Log.i("Test", "Paused")
+    }
+    override fun onRestart(){
+        super.onRestart()
+        Log.i("Test","Restart")
+    }
+    override fun onResume(){
+        super.onResume()
+        Log.i("Test","Resumed")
+    }
+    override fun onStart(){
+        super.onStart()
+        Log.i("Test","Started")
+    }
 }
